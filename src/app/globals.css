@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,9 +21,17 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-kanit);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: block;
+  background-color: white;
+}
+.maintext{
+  text-align: center;
+  font-weight: 550;
+  font-size: 50px;
+  margin-top: 40px;
 }
 
 * {

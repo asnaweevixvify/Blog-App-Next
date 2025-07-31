@@ -1,0 +1,43 @@
+.maintext{
+    text-align: center;
+    font-weight: 550;
+    font-size: 50px;
+    margin-top: 60px;
+    color: black;
+}
+.formcontainer form{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 500px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    gap: 15px;
+    border-radius: 10px;
+}
+.formcontainer p{
+    color: white;
+}
+.formcontainer input{
+    border: 2px solid white;
+    width: 400px;
+    height: 40px;
+    color: white;
+}
+.formcontainer textarea{
+    border: 2px solid white;
+    width: 400px;
+    height: 100px;
+    color: white;
+}
+.formcontainer button{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
