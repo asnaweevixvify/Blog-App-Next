@@ -34,7 +34,7 @@ export default function Edit() {
         const api = `${process.env.NEXT_PUBLIC_API}/api/updateData/${id}`
         
         try {
-            await axios.put(api,data)
+            await axios.put(api,{title,content,author})
             setData({title:'',content:'',author:''})
             Swal.fire({
                 title: "แก้ไขบทความสำเร็จ",

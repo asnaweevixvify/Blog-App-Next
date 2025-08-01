@@ -15,7 +15,7 @@ export default function Home() {
 
   const getData = async ()=>{
     try {
-        const api = process.env.NEXT_PUBLIC_API+"/api/getData"
+        const api = `${process.env.NEXT_PUBLIC_API}/api/getData`
         const res = await axios.get(api)
         setData(res.data)
         setIsLoading(false)
@@ -65,7 +65,7 @@ export default function Home() {
     getData()
   },[])
  
-    if(!isLoading) {
+    if(!isLoading && data.length>0) {
       return(
         <div>
           <h1 className={styles.maintext}>Blog App Nextjs</h1>
