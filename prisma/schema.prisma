@@ -15,7 +15,12 @@ datasource db {
 }
 model Blog {
   id       String @id @default(auto()) @map("_id") @db.ObjectId
-  title    String
+  title    String @unique
   content  String 
   author   String
+}
+model User {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  username String @unique
+  password String
 }

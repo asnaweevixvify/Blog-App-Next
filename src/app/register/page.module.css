@@ -48,3 +48,6 @@
 .des a{
     color:skyblue;
 }
+.formcontainer button:disabled{
+    opacity: 0.5;
+}
